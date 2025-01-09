@@ -1,0 +1,55 @@
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Estilo para el título */
+  h1 {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para la imagen */
+  img {
+    width: 700px; /* Tamaño mediano */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para los párrafos */
+  p {
+    margin-bottom: 10px;
+    width: 700px;
+  }
+  
+  /* Estilo para el contenedor de la cantidad de boletos */
+  .ticket-stock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: white;
+  }

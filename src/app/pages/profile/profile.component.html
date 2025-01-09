@@ -1,0 +1,17 @@
+
+<div class="profile-container">
+  <div class="cover-photo">
+    <!-- Aquí puedes poner la imagen de portada -->
+    <img src="https://th.bing.com/th/id/R.edab73f2b214c9e5b03166aea54f8f6c?rik=%2bo7QYN%2f6IGKGgw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-IJxkiX9BHfk%2fUfb3ia-m9RI%2fAAAAAAAB23g%2fmxSvwX_bAXA%2fs1600%2fportadas-para-tu-facebook-24.jpg&ehk=IynW4NKEXNTpmpnLdU6UOyIZ35kK%2fc%2bqAqdSWUxM7lM%3d&risl=&pid=ImgRaw&r=0" alt="Foto de portada">
+  </div>
+  <div class="profile-photo">
+    <!-- Aquí puedes poner la imagen de perfil -->
+    <img src="https://i.pinimg.com/736x/b8/dd/ec/b8ddec68d502314ee6c1f9813dbd0e24.jpg" alt="Foto de perfil">
+  </div>
+ 
+  <p><strong>Nombre:</strong> {{auth.profile?.name}}</p>
+  <p><strong>Email:</strong> {{auth.profile?.email}}</p>
+  <p><strong>Phone:</strong> {{auth.profile?.phone}}</p>
+  <p><strong>UID:</strong> {{auth.profile?.id}}</p>
+  <button [routerLink]="'/edit-profile'" class="btn">Editar perfil</button>
+</div>

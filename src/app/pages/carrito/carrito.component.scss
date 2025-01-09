@@ -1,0 +1,35 @@
+/* Estilo para los elementos del carrito */
+ul {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si es necesario */
+    gap: 20px; /* Espacio entre los elementos */
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0;
+  }
+  
+  app-cart-item {
+    border: 2px solid black; /* Margen de color negro */
+    padding: 10px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    width: calc(33.333% - 20px); /* Ajustar el ancho para que tres elementos quepan en una fila */
+    box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+  }
+  
+  /* Estilo para los botones */
+  button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: white;
+  }

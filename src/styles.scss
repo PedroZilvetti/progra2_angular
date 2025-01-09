@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'spotify-light';
+  src: url('/fonts/CircularSpotifyText-Light.otf');
+}
+@font-face {
+  font-family: 'spotify-bold';
+  src: url('/fonts/CircularSpotifyText-Bold.otf');
+}
+
+h1, h2, h3, h4, p, span {
+  font-family: 'spotify-light';
+}
+
+
+/* Definir Variables para el Sistema de Diseño */
+:root {
+  /* Colores de la paleta Spotify */
+  --color-dark-bg: #191414;
+  --color-dark-bg-alt: #121212;
+  --color-light-text: #ffffff;
+  --color-muted-text: #b3b3b3;
+  --color-green-accent: #1DB954;
+
+  /* Tipografía */
+  --font-primary-light: 'spotify-light', sans-serif;
+  --font-primary-bold: 'spotify-bold', sans-serif;
+
+  /* Espaciadores */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-xlarge: 32px;
+
+  /* Bordes */
+  --border-radius: 8px;
+  --border-color: #282828;
+
+  /* Otros */
+  --transition-default: 0.3s ease;
+}

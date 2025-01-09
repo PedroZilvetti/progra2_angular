@@ -1,0 +1,42 @@
+/* Centrar el contenedor del formulario en la pantalla */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilo para el formulario */
+  form {
+    width: 100%;
+    max-width: 900px; /* Manteniendo el ancho máximo */
+    padding: 70px; /* Manteniendo el padding */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+  }
+  
+  /* Estilo para los grupos de control del formulario */
+  .form-control-group {
+    margin-bottom: 20px; /* Manteniendo el margen inferior */
+  }
+  
+  /* Estilo para el botón de iniciar sesión */
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Manteniendo el padding */
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: black;
+    color: white;
+  }

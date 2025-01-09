@@ -1,0 +1,11 @@
+<div class="cards-container">
+  <div class="card">
+    <img class="card-img-top" src="{{data.imagen}}" alt="Card image cap" routerLink="/view-post/{{data.id}}">
+    <div class="card-body">
+      <h5 class="card-title" routerLink="/view-profile/{{data.userId}}">{{data.Nombre}}</h5>
+      <button (click)="detalleEvento(data.id)">Ver juego</button>
+      <button *ngIf="showEditButton" (click)="editEvent(data.id)">Editar</button>
+    </div>
+  </div>
+  <!-- Repite la estructura de la tarjeta para cada elemento -->
+</div>

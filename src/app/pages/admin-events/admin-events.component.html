@@ -1,0 +1,29 @@
+<h1>Gestión de Eventos</h1>
+
+<!-- Botones de filtro -->
+<div class="filter-buttons">
+  <button (click)="filterByTag('')">Todos</button>
+  <button (click)="filterByTag('nuevos')">Nuevos</button>
+  <button (click)="filterByTag('terro')">Terror</button>
+  <button (click)="filterByTag('aventura')">Aventura</button>
+  <button (click)="filterByTag('estrategia')">Estrategia</button>
+  <button (click)="filterByTag('arcade')">Arcade</button>
+  <button (click)="filterByTag('simulacion')">Simulación</button>
+  <button (click)="filterByTag('accion')">Acción</button>
+  <button (click)="filterByTag('deportivos')">Deportivos</button>
+  <button (click)="filterByTag('multi')">Multijugador</button>
+  <button (click)="filterByTag('descuentos')">Descuentos</button>
+  <button (click)="filterByTag('destacado')">Destacados</button>
+</div>
+<button (click)="addEvent()">Añadir Nuevo Evento</button>
+<!-- Lista de eventos -->
+<div class="events-list">
+  <app-card *ngFor="let event of filteredEvents" [data]="event">
+    <!-- Botón para editar evento -->
+    <button (click)="editEvent(event.id)">Editar</button>
+  </app-card>
+</div>
+
+<ng-template #noEvents>
+  <p>No hay eventos registrados.</p>
+</ng-template>

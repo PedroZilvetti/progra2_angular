@@ -1,0 +1,28 @@
+<form [formGroup]="eventoForm" (ngSubmit)="saveEvent()">
+    <div>
+      <label for="Nombre">Nombre:</label>
+      <input id="Nombre" formControlName="Nombre" type="text">
+    </div>
+    <div>
+      <label for="Descripcion">Descripción:</label>
+      <input id="Descripcion" formControlName="Descripcion" type="text">
+    </div>
+    <div>
+      <label for="precio">Precio:</label>
+      <input id="precio" formControlName="precio" type="number">
+    </div>
+    <div>
+      <label for="cantidad">Cantidad:</label>
+      <input id="cantidad" formControlName="cantidad" type="number">
+    </div>
+    <div>
+      <label for="descuento">Descuento:</label>
+      <input id="descuento" formControlName="descuento" type="number">
+    </div>
+    <div>
+      <label for="imagen">Imagen:</label>
+      <input id="imagen" formControlName="imagen" type="text">
+    </div>
+    <button type="button" (click)="deleteEvent()">Eliminar Evento</button>
+    <button type="submit">Guardar Cambios</button>
+  </form>
